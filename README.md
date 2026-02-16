@@ -4,8 +4,7 @@
 >
 > 할 일을 별(Star)로, 성취를 별자리(Constellation)로 시각화한 감성 투두 리스트 앱입니다.
 
-![Stardust Preview](https://via.placeholder.com/800x400.png?text=Stardust+Preview+Image)
-*(여기에 실제 스크린샷을 넣어주세요)*
+
 
 ## 🌌 프로젝트 소개
 
