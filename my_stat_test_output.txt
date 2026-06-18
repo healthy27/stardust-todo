@@ -1,0 +1,77 @@
+COMPILE_OK
+--- my_stat /usr/bin/stat ---
+  File: /usr/bin/stat -> ../lib/cargo/bin/coreutils/stat
+  Size: 31        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 802h/2050d	Inode: 917760      Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-06-04 20:05:16.372392778 +0900
+Modify: 2026-03-31 01:50:24.000000000 +0900
+Change: 2026-06-04 20:00:37.439550175 +0900
+ Birth: -
+--- stat /usr/bin/stat ---
+  File: '/usr/bin/stat' -> '../lib/cargo/bin/coreutils/stat'
+  size: 31        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,2	Inode: 917760      Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-06-11 17:46:17.465779532 +0900
+Modify: 2026-03-31 01:50:24.000000000 +0900
+Change: 2026-06-04 20:00:37.439550175 +0900
+ Birth: 2026-06-04 20:00:37.439467822 +0900
+--- my_stat /bin/vim ---
+./my_stat: cannot stat '/bin/vim': No such file or directory
+--- stat /bin/vim ---
+stat: cannot stat '/bin/vim': No such file or directory (os error 2)
+--- my_stat /dev/ttyS0 ---
+  File: /dev/ttyS0
+  Size: 0         	Blocks: 0          IO Block: 4096   character special file
+Device: 7h/7d	Inode: 90          Links: 1	Device type: 4,40
+Access: (0660/crw-rw----)  Uid: (    0/    root)   Gid: (   20/ dialout)
+Access: 2026-06-04 20:08:49.294999890 +0900
+Modify: 2026-06-04 20:08:49.294999890 +0900
+Change: 2026-06-04 20:08:49.294999890 +0900
+ Birth: -
+--- stat /dev/ttyS0 ---
+  File: /dev/ttyS0
+  size: 0         	Blocks: 0          IO Block: 4096   character special file
+Device: 0,7	Inode: 90          Links: 1     Device Type: 4,40
+Access: (0660/crw-rw----)  Uid: (    0/    root)   Gid: (   20/ dialout)
+Access: 2026-06-04 20:08:49.294999890 +0900
+Modify: 2026-06-04 20:08:49.294999890 +0900
+Change: 2026-06-04 20:08:49.294999890 +0900
+ Birth: 2026-06-04 20:21:32.718456687 +0900
+--- my_stat /tmp ---
+  File: /tmp
+  Size: 400       	Blocks: 0          IO Block: 4096   directory
+Device: 2ch/44d	Inode: 1           Links: 16
+Access: (1777/drwxrwxrwt)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-06-04 20:08:49.759999877 +0900
+Modify: 2026-06-11 17:46:17.463363311 +0900
+Change: 2026-06-11 17:46:17.463363311 +0900
+ Birth: -
+--- stat /tmp ---
+  File: /tmp
+  size: 400       	Blocks: 0          IO Block: 4096   directory
+Device: 0,44	Inode: 1           Links: 16
+Access: (1777/drwxrwxrwt)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-06-04 20:08:49.759999877 +0900
+Modify: 2026-06-11 17:46:17.463363311 +0900
+Change: 2026-06-11 17:46:17.463363311 +0900
+ Birth: 2026-06-04 20:08:49.759999877 +0900
+--- my_stat /dev/sda ---
+  File: /dev/sda
+  Size: 0         	Blocks: 0          IO Block: 512    block special file
+Device: 7h/7d	Inode: 388         Links: 1	Device type: 8,0
+Access: (0660/brw-rw----)  Uid: (    0/    root)   Gid: (    6/    disk)
+Access: 2026-06-11 08:41:18.616947011 +0900
+Modify: 2026-06-04 20:08:49.396999887 +0900
+Change: 2026-06-04 20:08:49.396999887 +0900
+ Birth: -
+--- stat /dev/sda ---
+  File: /dev/sda
+  size: 0         	Blocks: 0          IO Block: 512    block special file
+Device: 0,7	Inode: 388         Links: 1     Device Type: 8,0
+Access: (0660/brw-rw----)  Uid: (    0/    root)   Gid: (    6/    disk)
+Access: 2026-06-11 08:41:18.616947011 +0900
+Modify: 2026-06-04 20:08:49.396999887 +0900
+Change: 2026-06-04 20:08:49.396999887 +0900
+ Birth: 2026-06-04 20:08:46.932999958 +0900
